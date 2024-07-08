@@ -32,6 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
       confirmPasswordInput.classList.remove('invalid');
     }
 
+    // Disable submit button if he password is less than 8 characters OR if the password and confirm password don't match.
     submitBtn.disabled = password.length < 8 || password !== confirmPassword;
   };
+
+  // Event listeners whenever the user types in the password and confirm password fields. Call the validatePassword function
+  passwordInput.addEventListener('input', validatePassword);
+  confirmPasswordInput.addEventListener('input', validatePassword);
 });
