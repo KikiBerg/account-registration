@@ -54,6 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Log the reg data to the console and display it in an alert
     console.log(registrationData);
-    alert(registrationData);
+    alert(JSON.stringify(registrationData, null, 2)); // convert the object to a formatted string for the alert
   });
 });
