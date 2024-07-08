@@ -39,4 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Event listeners whenever the user types in the password and confirm password fields. Call the validatePassword function
   passwordInput.addEventListener('input', validatePassword);
   confirmPasswordInput.addEventListener('input', validatePassword);
+
+  // Add an event listener to the form for the submit event
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior, which would refresh the page
+
+    // Create an object with the user's input data
+    const registrationData = {
+      fname: firstNameInput.value,
+      lname: lastNameInput.value,
+      email: emailInput.value,
+      password: passwordInput.value,
+    };
+  });
 });
