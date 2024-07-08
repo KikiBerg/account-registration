@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const registrationData = {
       fname: firstNameInput.value,
       lname: lastNameInput.value,
+      username: usernameInput.value,
       email: emailInput.value,
       password: passwordInput.value,
     };

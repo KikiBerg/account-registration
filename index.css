@@ -1,3 +1,8 @@
+:root {
+    --transition: all 0.3s ease;
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,26 +11,30 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #ffffff 0%, #dbdbdb 100%);    
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .registration-container {
     background-color: #FBF3D5;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;    
+    max-width: 600px;       
 }
+
 
 h1 {
     text-align: center;
     margin-bottom: 2rem;
     color: #EFBC9B;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .form-registration {
@@ -37,6 +46,7 @@ h1 {
 .form-part {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 label {
@@ -46,7 +56,7 @@ label {
 }
 
 label span {   
-    font-weight: bold;    
+    font-weight: 600;    
     color: #9CAFAA;    
 }
 
@@ -60,11 +70,13 @@ input {
 input:focus {
     outline: none;
     border-color: #EFBC9B;
+    box-shadow: 0 0 0 3px rgba(214, 218, 200, 0.5);
 }
 
 input.invalid {    
     border-color: #dd5a5a;
 }
+
 
 .submit-btn {
     background-color: #EFBC9B;
@@ -73,10 +85,62 @@ input.invalid {
     padding: 0.75rem;
     border-radius: 4px;
     font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     transition: background-color 0.2s;
 }
 
 .submit-btn:hover:not(:disabled) {
     background-color: #9CAFAA;
 }
+
+.submit-btn:disabled {
+    background-color: #dbdbdb;
+    cursor: not-allowed;
+  }
+
+/* Media queries smaller screens */
+
+@media (max-width: 480px) {
+    .registration-container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    input {
+        font-size: 0.8rem;
+    }
+
+    .submit-btn {
+        font-size: 0.8rem;
+    }
+}
+
+/* Media queries larger screens */
+
+@media (min-width: 768px) {
+    .registration-container {
+      padding: 3rem;
+    }
+  
+    h1 {
+      font-size: 2.25rem;
+    }
+  
+    .form-part {
+      gap: 0.75rem;
+    }
+  
+    input {
+      padding: 0.875rem;
+    }
+  
+    .submit-btn {
+      padding: 0.875rem;
+    }
+  }
