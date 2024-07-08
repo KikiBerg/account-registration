@@ -5,7 +5,7 @@ In this exercise you will build a form in which you can simulate a creation of a
 The form should have to following content and functionlity.
 
 - Screenshot of my form:
-  ![My registration form](documentation\screenshot.png)
+  ![screenshot](documentation\screenshot.png)
 
 - Colour palette used:
-  ![Colour palette](documentation\colorpallete-hex.png)
+  ![screenshot](documentation\colorpallete-hex.png)
