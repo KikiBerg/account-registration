@@ -25,8 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
       passwordInput.classList.remove('invalid');
     }
 
-    
+    // Checks if the password and confirm password match. If false, add the 'invalid' class to the confirm password input. If ttrue, remove the 'invalid' class.
+    if (password !== confirmPassword) {
+      confirmPasswordInput.classList.add('invalid');
+    } else {
+      confirmPasswordInput.classList.remove('invalid');
+    }
+
+    submitBtn.disabled = password.length < 8 || password !== confirmPassword;
   };
-
-
 });
