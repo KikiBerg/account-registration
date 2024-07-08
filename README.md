@@ -38,8 +38,8 @@ const registrationData = {
 
 ### Screenshot of my form:
 
-![screenshot](documentation\screenshot.png)
+![screenshot](documentation/screenshot.png)
 
 ### Colour palette I used:
 
-![screenshot](documentation\colorpallete-hex.png)
+![screenshot](documentation/colorpallete-hex.png)
