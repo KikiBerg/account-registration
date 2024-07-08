@@ -51,5 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
       email: emailInput.value,
       password: passwordInput.value,
     };
+
+    // Log the reg data to the console and display it in an alert
+    console.log(registrationData);
+    alert(registrationData);
   });
 });
