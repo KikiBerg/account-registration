@@ -11,4 +11,22 @@ document.addEventListener('DOMContentLoaded', () => {
     '.confirm-password-input'
   );
   const submitBtn = document.querySelector('.submit-btn');
+
+  // Function to check if the password meets the requirements and if the confirm password matches
+  const validatePassword = () => {
+    // Get the current values of the password and confirm password inputs
+    const password = passwordInput.value;
+    const confirmPassword = confirmPasswordInput.value;
+
+    // Check if the password is less than 8 characters. If true, add the 'invalid' class to the password input. If false, remove the 'invalid' class
+    if (password.length < 8) {
+      passwordInput.classList.add('invalid');
+    } else {
+      passwordInput.classList.remove('invalid');
+    }
+
+    
+  };
+
+
 });
