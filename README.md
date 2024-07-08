@@ -34,7 +34,7 @@ This object is to be written to the console or written in an alert. The values s
 9. I would like that you also focus on writing clean code and use decent, thought-through, stylings.
 
 - Screenshot of my form:
-  ![screenshot](documentation\screenshot.png)
+![screenshot](documentation\screenshot.png)
 
 - Colour palette used:
-  ![screenshot](documentation\colorpallete-hex.png)
+![screenshot](documentation\colorpallete-hex.png)
